@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>世久營造固定資產表</title>
+	<style type="text/css">
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	width: 120%;
+			height: 830px;
+		
+background-image: url("https://www.awec.com.tw/Upload/Products/200961.jpg");
+background-size: cover;
+background-position: 140% 85%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+
+}
+
+.side-menu{
+	position: relative;
+	width: 300px;
+	height: 130%;
+	padding: 50px 0;
+	box-sizing: border-box;
+	background-image: linear-gradient(0deg,#1a8195,#dee7ecf2);
+	display: flex;
+	flex-direction: column;
+	box-shadow: 15px 0px 15px rgba(80, 80, 82, 0.6);
+
+}
+.side-menu form{
+	display: flex;
+	margin: 0 10px 50px;
+	border-radius: 100px;
+	border:1px solid rgb(255,255,255,.4);
+}
+.side-menu form input,
+.side-menu form button{
+	border:none;
+	background-color: transparent;
+	color: #fff(19, 2, 2);
+	padding: 5px 10px;
+}
+.side-menu form input{
+	width: 230px;
+}
+.side-menu form button{
+	width: 50px;
+}
+.side-menu form input:focus,
+.side-menu form button:focus{
+	outline: none;
+}
+.side-menu label{
+	position: absolute;
+	width: 40px;
+	height: 80px;
+	background-color: #000;
+	color: #fff;
+	right: -40px;
+	top: 10;
+	bottom: 0;
+	margin: auto;
+	line-height: 80px;
+	text-align: center;
+	font-size: 40px;
+	border-radius: 0 10px 10px 0;
+}
+#side-menu-switch{
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+#side-menu-switch:checked + .side-menu{
+	transform: translateX(0);
+}
+#side-menu-switch:checked + .side-menu label .fa{
+	transform: scaleX(-1);
+} 
+.nav a{
+	display: block;
+	padding: 15px;
+	color: rgb(59, 86, 111);
+	text-decoration: none;
+	position: relative;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+.nav li{
+	position: relative;
+}
+.nav li + li a::before{
+	content: '';
+	position: absolute;
+	border-top: 1px solid rgb(255,255,255,.4);
+	left: 10px;
+	right: 10px;
+	top: 0;
+}
+.nav a .fa{
+	margin-right: -1.1em;
+	transform: scale(0);
+	transition: .3s;
+}
+.nav li:hover .fa{
+	margin-right: 0em;
+	transform: scale(1);
+}
+.nav li:hover > a{
+	background-color: rgba(255,255,255,.6);
+}
+.nav ul{
+	display: none;
+	position: absolute;
+	left: 100%;
+	width: 300px;
+	top: 6px;
+	background-color:rgba(195, 223, 228, .6);
+	box-shadow: 5px 5px 10px hsla(240, 40%, 15%,.4);
+}
+.nav li:hover > ul{
+	display: block;
+}
+	</style>	
+</head>
+<body>
+	
+<input type="checkbox" name="" id="side-menu-switch">
+	<div class="side-menu">
+		<form>
+			<input type="search" placeholder="請輸入關鍵字">
+			<button><i class="fa fa-search"></i></button>
+			<input type="submit" value="提交">
+		</form>
+
+
+
+	<ul class="nav">
+		
+		<li>
+			<a href="#">
+				<i class="fa fa-users" aria-hidden="true"></i> 
+				21-機具設備
+			</a>
+			<ul>
+				<li>
+					<a href="123">01-土方工程機具設備</a>
+					<ul>
+						<li><a href="/21-機具設備/01-土方工程機具設備/01-履帶式挖溝機.html">01-履帶式挖溝機</a></li>
+						<li><a href="/21-機具設備/01-土方工程機具設備/02-履帶式推土機.html">02-履帶式推土機</a></li>
+						<li><a href="/21-機具設備/01-土方工程機具設備/03-履帶式裝料機.html">03-履帶式裝料機</a></li>
+						<li><a href="/21-機具設備/01-土方工程機具設備/04-輪胎式裝料機.html">04-輪胎式裝料機</a></li>
+						<li><a href="/21-機具設備/01-土方工程機具設備/05-液壓破碎機.html">05-液壓破碎機</a></li>
+						<li><a href="/21-機具設備/01-土方工程機具設備/06-壓路機.html">06-壓路機</a></li>
+						<li><a href="/21-機具設備/01-土方工程機具設備/07-灌漿平台.html">07-灌漿平台</a></li>
+					</ul>
+					
+				</li>
+				<li>
+					<a href="123">02-機礎工程機具設備</a>
+					<ul>
+						<li><a href="21-機具設備\02-機礎工程機具設備\01-連續壁液壓式挖掘機.html">01-連續壁液壓式挖掘機</a></li>
+						<li><a href="21-機具設備\02-機礎工程機具設備\02-連續壁液壓式挖掘機抓斗.html">02-連續壁液壓式挖掘機抓斗</a></li>
+						<li><a href="21-機具設備\02-機礎工程機具設備\03-連續壁機械式挖掘機.html">03-連續壁機械式挖掘機</a></li>
+						<li><a href="21-機具設備\02-機礎工程機具設備\04-震動打樁機.html">04-震動打樁機</a></li>
+						<li><a href="21-機具設備\02-機礎工程機具設備\05-反循環鑽機.html">05-反循環鑽機</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="123">03-隧道鑽灌工程機具設備</a>
+					<ul>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\01-軌道式雙鎗鑽堡.html">01-軌道式雙鎗鑽堡</a></li>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\02-隧道開挖出渣機.html">02-隧道開挖出渣機</a></li>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\03-隧道電動機車頭.html">03-隧道電動機車頭</a></li>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\04-隧道出渣車.html">04-隧道出渣車</a></li>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\05-軸流式通風機.html">05-軸流式通風機</a></li>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\06-手提式鑽機.html">06-手提式鑽機</a></li>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\07-鑽機.html">07-鑽機</a></li>
+						<li><a href="21-機具設備\03-隧道鑽灌工程機具設備\08-灌漿機.html">08-灌漿機</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="123">04-起重機具設備</a>
+					<ul>
+						<li><a href="21-機具設備\04-起重機具設備\01-履帶式起重吊車.html">01-履帶式起重吊車</a></li>
+						<li><a href="21-機具設備\04-起重機具設備\02-門型起重機.html">02-門型起重機</a></li>
+						<li><a href="21-機具設備\04-起重機具設備\03-履帶式推土機.html">03-吊車桁架</a></li>
+						<li><a href="21-機具設備\04-起重機具設備\04-全套管.html">04-全套管</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="123">05-混凝土工程機</a>
+					<ul>
+						<li><a href="21-機具設備\05-混凝土工程機\01-混凝土泮合場.html">01-混凝土泮合場</a></li>
+						<li><a href="21-機具設備\05-混凝土工程機\02-噴漿機.html">02-噴漿機</a></li>
+						<li><a href="21-機具設備\05-混凝土工程機\03-渦輪預拌機.html">03-渦輪預拌機</a></li>
+						<li><a href="21-機具設備\05-混凝土工程機\04-中壓幫浦.html">04-中壓幫浦</a></li>
+						<li><a href="21-機具設備\05-混凝土工程機\05-慢速桶、量水桶.html">05-慢速桶、量水桶</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="123">06-工程車輛</a>
+					<ul>
+						<li><a href="21-機具設備\06-工程車輛\01-水牛車.html">01-水牛車</a></li>
+						<li><a href="21-機具設備\06-工程車輛\02-棄土車.html">02-棄土車</a></li>
+						<li><a href="21-機具設備\06-工程車輛\03-鐵牛車.html">03-鐵牛車</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="123">07-量測機具設備</a>
+					<ul>
+						<li><a href="21-機具設備\07-量測機具設備\01-水準儀.html">01-水準儀</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\02-經緯儀.html">02-經緯儀</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\03-光波測距儀.html">03-光波測距儀</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\04-雷射定位儀.html">04-雷射定位儀</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\05-荷蘭錐貫入儀.html">05-荷蘭錐貫入儀</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\06-流量計.html">06-流量計</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\07-超音波測定儀.html">07-超音波測定儀</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\08-CPT-卡車.html">08-CPT-卡車</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\09-噪音計、傾斜儀.html">09-噪音計、傾斜儀</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\10-氣體偵測器.html">10-氣體偵測器</a></li>
+						<li><a href="21-機具設備\07-量測機具設備\11-測微器.html">11-測微器</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="123">08-其他機具設備</a>
+					<ul>
+						<li><a href="21-機具設備\08-其他機具設備\01-柴油發電機.html">01-柴油發電機</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\02-空壓機.html">02-空壓機</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\03-貨櫃.html">03-貨櫃</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\04-CO2電焊機.html">04-CO2電焊機</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\05-高壓清洗機.html">05-高壓清洗機</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\06-棄土桶.html">06-棄土桶</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\07-電腦噴印機.html">07-電腦噴印機</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\08-覆工版樑型鋼.html">08-覆工版樑型鋼</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\09-柴油加油機.html">09-柴油加油機</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\10-動力壓密夯擊重錘.html">10-動力壓密夯擊重錘</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\11-動力壓密淺層夯錘.html">11-動力壓密淺層夯錘</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\12-沖刷刀.html">12-沖刷刀</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\13-油壓押管器.html">13-油壓押管器</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\14-引爆器.html">14-引爆器</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\15-活動廁所.html">15-活動廁所</a></li>
+						<li><a href="21-機具設備\08-其他機具設備\16-鐵件.html">16-鐵件</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-users" aria-hidden="true"></i> 
+				31-運輸設備
+			</a>
+			<ul>
+				
+				<li>
+					<a href="123">01-汽車</a>
+					<ul>
+						<li><a href="/31-運輸設備/01-汽車/01-小客車.html">01-小客車</a></li>
+						<li><a href="/31-運輸設備/01-汽車/02-客貨二用車.html">02-客貨二用車</a></li>
+						<li><a href="/31-運輸設備/01-汽車/03-貨卡車.html">03-貨卡車</a></li>
+						<li><a href="/31-運輸設備/01-汽車/04-休旅車.html">04-休旅車</a></li>
+						<li><a href="/31-運輸設備/01-汽車/05-吊卡車.html">05-吊卡車</a></li>
+						<li><a href="/31-運輸設備/01-汽車/06-加油車.html">06-加油車</a></li>
+						<li><a href="/31-運輸設備/01-汽車/07-水車.html">07-水車</a></li>
+						<li><a href="/31-運輸設備/01-汽車/08-土車.html">08-土車</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="123">02-機車</a>
+					<ul>
+						<li><a href="/31-運輸設備/02-機車/01-重型機車.html">01-重型機車</a></li>
+						<li><a href="/31-運輸設備/02-機車/02-輕型機車.html">02-輕型機車</a></li>
+						</ul>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">
+				<i class="fa fa-users" aria-hidden="true"></i> 
+				41-辦公設備
+			</a>
+			<ul>
+				<li>
+					<a href="123">01-電腦設備</a>
+					<ul>
+						<li><a href="41-辦公設備\01-電腦設備\06- 繪圖機.html">06-繪圖機</a></li>
+					</ul>
+				</li>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="#">
+			<i class="fa fa-users" aria-hidden="true"></i> 
+			61-鐵件
+		</a>
+		<ul>
+			
+			<li>
+				<a href="61-鐵件\洗車台\洗車台.html">洗車台</a>
+			</li>
+			<li>
+				<a href="61-鐵件\H型鋼\H型鋼.html">H型鋼</a>
+			</li>
+			<li>
+				<a href="61-鐵件\鋪路鐵板\鋪路鐵板.html">鋪路鐵板</a>
+			</li>
+		</li>
+	</ul>
+</li>
+<li>
+	<a href="#">
+		<i class="fa fa-users" aria-hidden="true"></i> 
+		重機具分布圖
+	</a>
+	<ul>
+		
+		<li>
+			<a href="機具分布圖\重機具分布圖.html">機具分布圖</a>
+		</li>
+</div>
+
+
+
+
+</body>
+</html>
