@@ -11,11 +11,6 @@
 	padding: 0;
 	list-style: none;
 }
-function isMobileDevice() {
-    const mobileDevice = ['Android', 'webOS', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone']
-    let isMobileDevice = mobileDevice.some(e => navigator.userAgent.match(e))
-    return isMobileDevice
-}
 html,body{
 	width: 120%;
 			height: 830px;
@@ -363,3 +358,13 @@ background-repeat: no-repeat;
 
 </body>
 </html>
+<script>
+    function DetectIphone()
+    {
+       var uagent = navigator.userAgent.toLowerCase();
+       if (uagent.search("iphone") > -1)
+          alert('true');
+       else
+          alert('false');
+    }
+</script>
